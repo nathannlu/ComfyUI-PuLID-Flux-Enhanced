@@ -249,7 +249,7 @@ class PulidFluxInsightFaceLoader:
     CATEGORY = "pulid"
 
     def load_insightface(self, provider):
-        model = FaceAnalysis(name="antelopev2", root=INSIGHTFACE_DIR, providers=[provider + 'ExecutionProvider',]) # alternative to buffalo_l
+        model = FaceAnalysis(name="antelopev2", root=INSIGHTFACE_DIR) # alternative to buffalo_l
         model.prepare(ctx_id=0, det_size=(640, 640))
 
         return (model,)
