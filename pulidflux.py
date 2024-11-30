@@ -18,6 +18,7 @@ from .eva_clip.constants import OPENAI_DATASET_MEAN, OPENAI_DATASET_STD
 from .encoders_flux import IDFormer, PerceiverAttentionCA
 
 INSIGHTFACE_DIR = os.path.join(folder_paths.models_dir, "insightface")
+print("Got insightface dir",INSIGHTFACE_DIR)
 
 MODELS_DIR = os.path.join(folder_paths.models_dir, "pulid")
 if "pulid" not in folder_paths.folder_names_and_paths:
