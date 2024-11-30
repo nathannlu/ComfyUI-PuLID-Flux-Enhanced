@@ -17,7 +17,8 @@ import torch.nn.functional as F
 from .eva_clip.constants import OPENAI_DATASET_MEAN, OPENAI_DATASET_STD
 from .encoders_flux import IDFormer, PerceiverAttentionCA
 
-INSIGHTFACE_DIR = os.path.join(folder_paths.models_dir, "insightface")
+#INSIGHTFACE_DIR = os.path.join(folder_paths.models_dir, "insightface")
+INSIGHTFACE_DIR = "/workspace/ComfyUI/models/insightface"
 print("Got insightface dir",INSIGHTFACE_DIR)
 
 MODELS_DIR = os.path.join(folder_paths.models_dir, "pulid")
